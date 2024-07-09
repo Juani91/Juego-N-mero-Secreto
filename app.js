@@ -22,7 +22,8 @@ while(numeroSecreto != numeroUsuario){
     if (numeroUsuario == numeroSecreto) {
         
         // Modificamos los elementos HTML al acertar
-        imagenTrofeo.
+        imagenTrofeo.src = './img/trophy.png';
+        imagenTrofeo.alt = 'Icono de trofeo';
         mensajeAzul.innerHTML = 'Correcto!';
         mensajeBlanco.innerHTML = 'Descubriste el número secreto!';
         mensajeBlancoDos.innerHTML = `El número es ${numeroUsuario}! Lo lograste luego de ${intentos} ${intentos == 1 ? 'intento!' : 'intentos!'}`;
